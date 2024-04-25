@@ -19,8 +19,8 @@ int main() {
 	int counter{};
 	srand(time(NULL));
 	for (int i = 0; i < size1; i++) {
-			arr1[i] = rand() % 100;
-			sum += arr1[i];
+		arr1[i] = rand() % 100;
+		sum += arr1[i];
 	}
 	double mean = (double)sum / size1;
 	for (int i = 0; i < size1; i++) {
@@ -49,7 +49,7 @@ int main() {
 	std::cout << "Задача 2.\nРезультат сложения двумерных массивов:\n\n";
 	for (int i = 0; i < size2; i++) {
 		for (int j = 0; j < size2; j++) {
-			mx3[i][j] = mx1[i][j]+mx2[i][j];
+			mx3[i][j] = mx1[i][j] + mx2[i][j];
 			std::cout << mx3[i][j] << '\t';
 		}
 		std::cout << "\n";
@@ -65,7 +65,7 @@ int main() {
 	const int size3 = 6;
 	int arr2[size3];
 	std::cin >> n;
-	if (n > 999999 || n < 99999) {
+	if (n > 999999 || n < 100000 || n > -100000 || n < -999999) {
 		return(1);
 	}
 	else
